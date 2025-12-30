@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TEJA</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#About" >About</a>
+            <a href="#skills" >Skills</a>
+            <a href="#Education" >Education</a>
+            <a href="#Resume" >Resume</a>
+            <a href="#Contact" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="teja-img.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>TEJA</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Crafting elegant solutions to complex problems through clean code and innovative design and  Creating beautiful, intuitive interfaces with attention to user experience and accessibility.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/teja-chitikina-b6a749314"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Teja-lad"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/code_monkey_42?utm_source=qr&igsh=czgzeG9mZzVibTFl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#Contact" class="btn">Hire me</a>
+        </div>
+    </section>
+    
+    <!-- UPDATED ABOUT SECTION WITH PROJECTS -->
+    <section class="About" id="About">
+        <!-- Categories View -->
+        <div id="categoriesView">
+            <h2 class="heading">My <span>About</span></h2>
+            
+            <div class="About-container">
+                <div class="About-box" onclick="showProjects('web')">
+                    <div class="About-info">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Web Development</h4>
+                        <p>Creating responsive and modern websites using the latest technologies. From simple landing pages to complex web applications.</p>
+                    </div>
+                </div>
+        
+                <div class="About-box" onclick="showProjects('backend')">
+                    <div class="About-info">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>Backend Development</h4>
+                        <p>Building API's and SQLTables that are fast, reliable, and user-friendly.</p>
+                    </div>
+                </div>
+
+                <div class="About-box" onclick="showProjects('aiml')">
+                    <div class="About-info">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4> AI/ML</h4>
+                        <p>Helping to create a chatbot and image classification and development of generative AI.</p>
+                    </div>
+                </div>
+
+                <div class="About-box" onclick="showProjects('photography')">
+                    <div class="About-info">
+                        <i class="fa-solid fa-camera"></i>
+                        <h4>Photography</h4>
+                        <p>Professional photography for portraits, and with creative editing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Development Projects -->
+        <div id="webProjects" class="projects-section">
+            <div class="projects-header">
+                <h3><i class="fa-solid fa-code"></i> Web Development Projects</h3>
+                <button class="back-btn" onclick="showCategories()">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-user"></i></div>
+                    <h4>Portfolio Website</h4>
+                    <p class="tech-stack">HTML • CSS • JavaScript</p>
+                    <p>A responsive personal portfolio website showcasing my skills, projects, and contact information with modern design and smooth animations.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Teja-lad/Teja-Portfolio" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://teja-lad.github.io/Teja-Portfolio/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-shopping-cart"></i></div>
+                    <h4>E-Commerce Landing Page</h4>
+                    <p class="tech-stack">HTML • CSS • JavaScript</p>
+                    <p>Modern e-commerce landing page with product showcases, interactive elements, and responsive design for all devices.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <h4>Task Manager App</h4>
+                    <p class="tech-stack">HTML • CSS • JavaScript</p>
+                    <p>Interactive task management application with CRUD operations, local storage, and a clean user interface.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend Development Projects -->
+        <div id="backendProjects" class="projects-section">
+            <div class="projects-header">
+                <h3><i class="fa-solid fa-server"></i> Backend Development Projects</h3>
+                <button class="back-btn" onclick="showCategories()">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-key"></i></div>
+                    <h4>User Authentication API</h4>
+                    <p class="tech-stack">Python • Flask • SQL • JWT</p>
+                    <p>RESTful API with secure user authentication, password hashing, and JWT token-based authorization system.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+                    <h4>Database Management System</h4>
+                    <p class="tech-stack">Python • SQL • MySQL</p>
+                    <p>Efficient database schema design with CRUD operations, stored procedures, and optimized queries for data management.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h4>AWS Cloud Application</h4>
+                    <p class="tech-stack">Python • AWS • Lambda • S3</p>
+                    <p>Serverless application deployed on AWS using Lambda functions, S3 storage, and API Gateway for scalable backend services.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI/ML Projects -->
+        <div id="aimlProjects" class="projects-section">
+            <div class="projects-header">
+                <h3><i class="fa-solid fa-brain"></i> AI/ML Projects</h3>
+                <button class="back-btn" onclick="showCategories()">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h4>Object Detection with YOLOv8</h4>
+                    <p class="tech-stack">Python • YOLOv8 • Roboflow • Computer Vision</p>
+                    <p>Healthcare-focused object detection model using YOLOv8 and Roboflow, achieving high precision in real-time detection.</p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/in/teja-chitikina-b6a749314" class="project-link"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h4>AI Chatbot</h4>
+                    <p class="tech-stack">Python • NLP • Machine Learning</p>
+                    <p>Intelligent chatbot using natural language processing to understand and respond to user queries with contextual awareness.</p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/in/teja-chitikina-b6a749314" class="project-link"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-image"></i></div>
+                    <h4>Image Classification Model</h4>
+                    <p class="tech-stack">Python</p>
+                    <p>Deep learning model for image classification using networks with high accuracy on test datasets.</p>
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/in/teja-chitikina-b6a749314" class="project-link"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photography Projects -->
+        <div id="photographyProjects" class="projects-section">
+            <div class="projects-header">
+                <h3><i class="fa-solid fa-camera"></i> Photography Portfolio</h3>
+                <button class="back-btn" onclick="showCategories()">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-user-circle"></i></div>
+                    <h4>Portrait Photography</h4>
+                    <p class="tech-stack">Photography • Lighting • Post-Processing</p>
+                    <p>Professional portrait photography with creative lighting setups and advanced editing techniques for stunning results.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-instagram"></i> View Gallery</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-mountain"></i></div>
+                    <h4>Landscape Photography</h4>
+                    <p class="tech-stack">Photography • Composition • HDR</p>
+                    <p>Capturing breathtaking landscapes with perfect composition, exposure blending, and color grading.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-instagram"></i> View Gallery</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                    <h4>Event Photography</h4>
+                    <p class="tech-stack">Photography • Candid • Storytelling</p>
+                    <p>Capturing memorable moments at events with candid shots and creative angles to tell compelling stories.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa-brands fa-instagram"></i> View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    
+    <div class="skills-container">
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress html"></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress css"></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress javascript"></div>
+                    <span class="skill-percent">40%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-AWS"></i>
+                    <h4>AWS</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress aws"></div>
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-SQL"></i>
+                    <h4>SQL</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress sql"></div>
+                    <span class="skill-percent">40%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-python"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress python"></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-FLASK's"></i>
+                    <h4>FLASK's</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress flask"></div>
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <div class="skill-header">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h4>Git</h4>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress git"></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education" id="Education">
+    <h2 class="heading">My <span>Education</span></h2>
+    
+    <div class="education-container">
+        <div class="education-box">
+            <div class="education-content">
+                <div class="year">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>2023 - 2025</span>
+                </div>
+                <div class="education-info">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Bachelor of Computer Applications</h3>
+                    <h4>University of AKNU </h4>
+                    <p>Graduated with honors, specializing in software engineering and web development. Completed projects in python using AWS, database management, and artificial intelligence.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-box">
+            <div class="education-content">
+                <div class="year">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>2020 - 2022</span>
+                </div>
+                <div class="education-info">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Higher Secondary Education</h3>
+                    <h4>Narayana Jr College </h4>
+                    <p>Focused on Biology, Physics, and  Chemistry. Achieved top grades and participated in various science competitions and challenges.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-box">
+            <div class="education-content">
+                <div class="year">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>2025</span>
+                </div>
+                <div class="education-info">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h3>Python using AWS, Python Using AI Certification</h3>
+                    <h4>Online Learning Platform</h4>
+                    <p>Comprehensive course covering HTML, CSS, JavaScript, and modern web development practices. Built multiple real-world projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="resume" id="Resume">
+    <h2 class="heading">My <span>Resume</span></h2>
+    
+    <div class="resume-container">
+        <div class="resume-header">
+            <h3>TEJA SAI CHITIKINA</h3>
+            <div class="resume-contact">
+                <p><i class="fa-solid fa-envelope"></i> chitikinateja6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7386674005</p>
+                <p><i class="fa-solid fa-location-dot"></i> Nagaraju Peta, Vemagiri</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h4><i class="fa-solid fa-user"></i> Profile</h4>
+            <p>Aspiring tech enthusiast with practical exposure to web development, programming, and AI tools. Eager to contribute to real-world projects, enhance organizational success, and continuously upskill in a fast-paced environment.</p>
+        </div>
+
+        <div class="resume-section">
+            <h4><i class="fa-solid fa-briefcase"></i> Experience</h4>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <h5>Intern - AIMER Society</h5>
+                    <span class="date">May 2024 - July 2024</span>
+                </div>
+                <ul>
+                    <li>Applied AI/ML concepts like Computer Vision, YOLOv8, CNNs, and LLMs in hands-on projects.</li>
+                    <li>Gained foundational knowledge in cybersecurity concepts, including OWASP framework.</li>
+                    <li>Utilized Python, Roboflow and AI tools to develop basic object detection and chatbot models.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h4><i class="fa-solid fa-laptop-code"></i> Projects</h4>
+            
+            <div class="resume-item">
+                <h5>Object Detection using YOLOv8 & Roboflow</h5>
+                <p>Developed an object detection model for healthcare using Roboflow and YOLOv8, improving detection precision with real-time AI application.</p>
+                <p><strong>Tools/Skills:</strong> Python, YOLOv8, Roboflow, Computer Vision, Deep Learning</p>
+            </div>
+
+            <div class="resume-item">
+                <h5>Power BI Dashboard for Business Insights</h5>
+                <p>Built dynamic dashboards in Power BI to visualize business data, reducing analysis time by 30% and enabling data-driven decisions.</p>
+                <p><strong>Tools/Skills:</strong> Power BI, Data Visualization, BI, Charts, Data Analysis</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h4><i class="fa-solid fa-star"></i> Skills & Interests</h4>
+            <div class="resume-grid">
+                <div class="resume-col">
+                    <h5>Professional Skills</h5>
+                    <ul>
+                        <li>Strong communication skills</li>
+                        <li>Effective Time Management</li>
+                        <li>Collaborative Team Player</li>
+                    </ul>
+                </div>
+                <div class="resume-col">
+                    <h5>Interests</h5>
+                    <ul>
+                        <li>Data Analytics & Visualization</li>
+                        <li>Artificial Intelligence & Emerging Technologies</li>
+                        <li>Participating in Hackathons & Technical Events</li>
+                        <li>Exploring New Places & Cultures</li>
+                        <li>Making Aesthetic Gift Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h4><i class="fa-solid fa-language"></i> Languages</h4>
+            <p>English, Telugu, Hindi</p>
+        </div>
+
+        <div class="resume-download">
+            <a href="#" class="btn">Download Resume PDF</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="Contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <div class="info-content">
+                    <h3>Phone</h3>
+                    <p>+91 7386674005</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p>chitikinateja19@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info-content">
+                    <h3>Location</h3>
+                    <p>HYDERABAD,INDIA</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Me</h3>
+                <div class="social-icons-contact">
+                    <a href="https://www.linkedin.com/in/teja-chitikina-b6a749314"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Teja-lad"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/code_monkey_42?utm_source=qr&igsh=czgzeG9mZzVibTFl"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email Address" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" placeholder="Phone Number">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Subject">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                </div>
+
+                <div class="input-box-full">
+                    <textarea placeholder="Your Message" rows="6" required></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 TEJA | All Rights Reserved</p>
+</footer>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
